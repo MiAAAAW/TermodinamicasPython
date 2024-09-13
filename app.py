@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-import modules.GP as GasPerfecto
+import modulos.GP as GasPerfecto
 
 class Interfaz(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -36,7 +36,7 @@ class Interfaz(tk.Tk):
         messagebox.showinfo("Acerca de", "Esta aplicación fue creada por estudiantes...")
 
     def cambiar_a_gas_perfecto(self):
-        # Iniciar Gas Perfecto
+        # Iniciar TERMOXSIMU
         print("Iniciando Simulacion")
         self.app = GasPerfecto.GasPerfecto(self)
         self.app.run()
